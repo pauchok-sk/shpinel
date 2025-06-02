@@ -1,0 +1,127 @@
+.header {
+  position: static;
+  background: linear-gradient(89deg, #e5e2dc 0%, #b4ae9e 100%);
+  top: 0;
+  padding: 22px 0px;
+  z-index: 100;
+  @include tablet-min {
+    padding: 15px 0px;
+  }
+  &._fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: none;
+  }
+
+  &__container {
+    @include flex-between;
+    gap: 30px;
+  }
+  &__logo {
+    display: block;
+    width: 160px;
+    @include laptop-min {
+      width: 130px;
+    }
+    @include tablet-min {
+      width: 110px;
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__nav {
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    a {
+      position: relative;
+      font-size: 18px;
+
+      @include hover {
+        &::before {
+          right: 0;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition: right 0.2s ease;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__tel {
+    font-size: 24px;
+    line-height: 108%;
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+    @include laptop-middle {
+      font-size: 20px;
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 15px;
+  }
+  &__social-btn {
+    display: block;
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__burger-btn {
+    display: none;
+    @include laptop-min {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      gap: 5px;
+
+      transition: opacity 0.2s ease;
+      @include hover {
+        opacity: 0.7;
+      }
+
+      div {
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+      }
+    }
+  }
+}

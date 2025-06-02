@@ -1,0 +1,73 @@
+.input-control {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.input {
+  padding: 25px;
+  background-color: white;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+  outline: none;
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  transition: border-color 0.2s ease;
+
+  @include tablet {
+    padding: 20px 15px;
+  }
+
+  &:focus {
+    border-color: var(--primary);
+  }
+}
+.form-btn {
+  width: 100%;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  @include tablet {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+}
+.form-policy-input {
+  display: none;
+  &:checked + label {
+    &::before {
+      background: url("@img/check-white.svg") center / 8px auto no-repeat;
+      background-color: var(--primary);
+    }
+  }
+}
+.form-policy-label {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--silver);
+  span {
+    margin-top: 2px;
+  }
+  a {
+    color: var(--primary);
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    flex-shrink: 0;
+
+    transition: background-color 0.2s ease;
+  }
+}

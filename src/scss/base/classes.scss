@@ -1,0 +1,29 @@
+._roboto {
+  font-family: "Roboto", sans-serif;
+}
+._cormorant {
+  font-family: "Cormorant", sans-serif;
+}
+
+.sect-circle {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 310px;
+  z-index: -1;
+  
+  &__inside {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 100%;
+      inset: 0px -830px;
+      background: linear-gradient(180deg, rgba(61, 69, 88, 0) 0%, #3d4558 90%);
+    }
+  }
+}

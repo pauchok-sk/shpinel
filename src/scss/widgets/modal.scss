@@ -1,0 +1,30 @@
+.modal {
+  display: none;
+  padding: 50px 40px !important;
+  width: 600px;
+  max-width: calc(100% - 30px);
+  @include tablet {
+    padding: 30px !important;
+  }
+  @include mobile {
+    padding: 20px 15px !important;
+  }
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: "Cormorant", sans-serif;
+    margin: 0px 0px 45px 0px;
+
+    @include laptop-min {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+  &__form {
+    width: 100%;
+  }
+}

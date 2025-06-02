@@ -1,0 +1,15 @@
+.s-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-family: "Cormorant", sans-serif;
+  margin: 0px 0px 45px 0px;
+
+  @include laptop-min {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  @include tablet {
+    font-size: 28px;
+  }
+}

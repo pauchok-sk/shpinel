@@ -1,0 +1,36 @@
+.btn-clear {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.btn-s {
+  @include flex-center;
+  padding: 20px 25px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 3px 0 0 #162920;
+  background: linear-gradient(90deg, #436a57 0%, #4e866a 98%);
+  width: fit-content;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  @include hover {
+    opacity: 0.9;
+  }
+  @include pressed {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+}
