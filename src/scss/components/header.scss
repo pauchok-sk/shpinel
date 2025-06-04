@@ -1,9 +1,10 @@
 .header {
-  position: static;
+  position: sticky;
   background: linear-gradient(89deg, #e5e2dc 0%, #b4ae9e 100%);
   top: 0;
   padding: 22px 0px;
   z-index: 100;
+  transition: transform .4s ease, background-color .4s ease;
   @include tablet-min {
     padding: 15px 0px;
   }
@@ -12,6 +13,12 @@
     left: 0;
     right: 0;
     background: none;
+  }
+  &._hide {
+    transform: translateY(-100%)
+  }
+  &._bg {
+    background-color: var(--westar);
   }
 
   &__container {

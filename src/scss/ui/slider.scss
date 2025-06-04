@@ -1,0 +1,84 @@
+.slider-btn {
+  @include flex-center;
+  cursor: pointer;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  transition:
+    background-color 0.2s ease,
+    opacity 0.2s ease;
+  @include hover {
+    background-color: var(--primary-hover);
+  }
+  @include tablet {
+    width: 45px;
+    height: 45px;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  &._lynch {
+    background-color: var(--lynch);
+    @include hover {
+      background-color: var(--lynch-hover);
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 15px;
+    @include tablet {
+      width: 16px;
+      height: 11px;
+    }
+  }
+}
+
+.slider-pagination {
+  @include flex-center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 35px;
+
+  @include tablet {
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  &._lynch {
+    .swiper-pagination-bullet {
+      @include hover {
+        background-color: var(--lynch);
+      }
+      &.swiper-pagination-bullet-active {
+        background-color: var(--lynch-hover);
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 !important;
+    background-color: var(--gallery);
+    transition: background-color 0.2s ease;
+    opacity: 1 !important;
+    @include hover {
+      background-color: var(--primary-hover);
+    }
+    @include tablet {
+      width: 10px;
+      height: 10px;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background-color: var(--primary);
+    }
+  }
+}

@@ -12,6 +12,8 @@
 @import "./ui/list";
 @import "./ui/list-check";
 @import "./ui/form";
+@import "./ui/title";
+@import "./ui/slider";
 
 // widgets
 @import "./widgets/burger";
@@ -21,5 +23,9 @@
 @import "./components/header";
 
 @import "./components/intro";
+@import "./components/s-about";
+@import "./components/s-adv";
+@import "./components/s-services";
+@import "./components/s-specifications";
 
 @import "./components/footer";

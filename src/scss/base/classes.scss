@@ -13,7 +13,7 @@
   overflow: hidden;
   height: 310px;
   z-index: -1;
-  
+
   &__inside {
     position: relative;
     width: 100%;
@@ -24,6 +24,25 @@
       border-radius: 100%;
       inset: 0px -830px;
       background: linear-gradient(180deg, rgba(61, 69, 88, 0) 0%, #3d4558 90%);
+    }
+  }
+}
+
+.sect-m {
+  margin: 75px 0px;
+  @include tablet {
+    margin: 50px 0px;
+  }
+}
+
+.content {
+  font-size: 18px;
+  line-height: 140%;
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 25px;
     }
   }
 }

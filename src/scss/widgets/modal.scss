@@ -1,8 +1,9 @@
 .modal {
   display: none;
-  padding: 50px 40px !important;
-  width: 600px;
+  padding: 35px !important;
+  width: 520px;
   max-width: calc(100% - 30px);
+  border-radius: 15px;
   @include tablet {
     padding: 30px !important;
   }
@@ -14,17 +15,49 @@
     text-transform: uppercase;
     color: var(--primary);
     font-family: "Cormorant", sans-serif;
-    margin: 0px 0px 45px 0px;
+    margin: 0px 0px 5px 0px;
 
     @include laptop-min {
       font-size: 32px;
-      margin-bottom: 30px;
     }
     @include tablet {
       font-size: 28px;
     }
   }
+  &__content {
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0px 0px 25px 0px;
+  }
   &__form {
     width: 100%;
+  }
+  &__form-policy-label {
+    font-size: 13px;
+  }
+
+  &__social {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__social-row {
+    display: flex;
+    gap: 22px;
+  }
+  &__social-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 }
