@@ -1,0 +1,120 @@
+.s-specifications {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  color: white;
+  align-items: end;
+  z-index: 1;
+  padding-bottom: 0 !important;
+
+  @include laptop-min {
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background-color: #3d4558;
+      opacity: 0.3;
+      z-index: -1;
+    }
+  }
+  @include tablet {
+    margin: 50px 0px;
+    padding: 0 !important;
+    color: var(--black);
+    display: block;
+
+    .sect-circle {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__title {
+    color: inherit;
+    margin-bottom: 15px !important;
+    @include tablet {
+      color: var(--primary);
+    }
+  }
+  &__content {
+    max-width: 565px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 60px;
+    gap: 45px;
+    @include laptop {
+      gap: 25px;
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 30px;
+    }
+  }
+  &__item {
+    min-height: 200px;
+    &:not(:last-child) {
+      padding-right: 25px;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    @include laptop-middle {
+      min-height: auto
+    }
+    @include tablet {
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(10, 10, 10, 0.3);
+      &:not(:last-child) {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+    @include tablet-min {
+      grid-column: 2 span;
+    }
+  }
+  &__item-num {
+    @include flex-center;
+    background-color: var(--primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 212%;
+    letter-spacing: 0.03em;
+  }
+  &__item-content {
+    font-size: 24px;
+    margin: 20px 0px 0px 0px;
+    @include laptop-min {
+      font-size: 20px;
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: top 0 left 0;
+    z-index: -2;
+
+    @include tablet {
+      position: static;
+      margin-top: 30px;
+      height: auto;
+      min-height: 250px;
+    }
+  }
+}
