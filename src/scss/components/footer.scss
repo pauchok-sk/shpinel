@@ -1,0 +1,26 @@
+.footer {
+  padding: 22px 0px;
+  background-color: var(--black);
+  color: white;
+  &__container {
+    @include flex-between;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+    row-gap: 20px;
+    @include tablet {
+      flex-direction: column;
+    }
+
+    a {
+      font-weight: 400;
+      @include hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__content {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

@@ -53,3 +53,27 @@
     }
   }
 }
+
+.s-head {
+  @include flex-between;
+  gap: 25px;
+  margin-bottom: 50px;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  .s-title {
+    margin: 0 !important;
+  }
+  .content {
+    margin-top: 15px;
+  }
+}
+
+.slider-nav {
+  display: flex;
+  gap: 25px;
+  @include tablet {
+    gap: 15px;
+  }
+}
