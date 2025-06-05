@@ -14,13 +14,18 @@
     position: absolute;
     content: "";
     inset: 0;
+    top: 0;
+    bottom: 10%;
+    left: -20%;
     right: 45%;
-    filter: blur(30px);
+    filter: blur(70px);
     background: linear-gradient(224deg, rgba(255, 255, 255, 0) 0%, #fff 60%);
-    z-index: -2;
+    z-index: -1;
     @include laptop-min {
       filter: none;
       right: 0;
+      bottom: 0;
+      z-index: -3;
     }
     @include tablet {
       background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%);

@@ -23,6 +23,32 @@
     border-color: var(--primary);
   }
 }
+.select {
+  padding: 25px;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("@img/arrow-down.png") center right 25px / 15px 15px no-repeat;
+  background-color: white;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  transition: border-color 0.2s ease;
+
+  @include tablet {
+    padding: 20px 15px;
+  }
+
+  &:focus {
+    border-color: var(--primary);
+  }
+}
 .form-btn {
   width: 100%;
   padding-top: 25px !important;

@@ -1,0 +1,76 @@
+.s-for-you {
+  position: relative;
+  margin-top: 245px !important;
+  z-index: 1;
+  &__container {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 15px !important;
+    span {
+      color: var(--primary-light);
+    }
+  }
+  &__content {
+    margin-bottom: 35px;
+  }
+  &__form-title {
+    font-size: 24px;
+    margin-bottom: 35px;
+    @include laptop-min {
+      margin-bottom: 20px;
+    }
+  }
+  &__form {
+    display: flex;
+    gap: 30px;
+    @include laptop-min {
+      flex-wrap: wrap;      
+      row-gap: 20px;
+    }
+    @include tablet-min {
+      row-gap: 15px;
+    }
+
+    .input-control {
+      width: auto;
+      flex: 0 1 365px;
+      margin-bottom: 0 !important;
+      @include laptop-min {
+        flex: none;
+        width: 100%;
+      }
+    }
+    .form-btn {
+      flex: 0 1 255px;
+      @include laptop-min {
+        flex: none;
+        width: 100%;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    bottom: -25px;
+    right: -100px;
+    width: 670px;
+    z-index: -1;
+    @media (max-width: 1680px) {
+      right: 30px;
+    }
+    @include laptop-middle {
+      width: 520px;
+    }
+    @include laptop-min {
+      width: 430px;
+      bottom: auto;
+      top: -150px;
+    }
+    @include tablet {
+      width: 340px;
+      right: 0;
+      top: -180px;
+    }
+  }
+}
