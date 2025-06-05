@@ -1,0 +1,36 @@
+.aioseo-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 7px;
+  font-family: "Cormorant", sans-serif;
+  margin-bottom: 15px;
+  .aioseo-breadcrumb {
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    &:last-child {
+      font-weight: 600;
+    }
+  }
+
+  a {
+    display: flex;
+    gap: 10px;
+    color: rgba(10, 10, 10, 0.5);
+
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--black);
+    }
+
+    &::after {
+      content: "/";
+    }
+  }
+
+  .aioseo-breadcrumb-separator {
+    display: none;
+  }
+}

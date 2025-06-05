@@ -31,6 +31,13 @@
   }
   &__form {
     width: 100%;
+
+    .form-btn {
+      @include mobile {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+    }
   }
   &__form-policy-label {
     font-size: 13px;
@@ -41,16 +48,20 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    font-size: 20px;
+    letter-spacing: 0.04em;
   }
   &__social-row {
     display: flex;
     gap: 22px;
+    flex-shrink: 0;
   }
   &__social-btn {
     display: block;
     width: 40px;
     height: 40px;
-    transition: opacity .2s ease;
+    transition: opacity 0.2s ease;
     @include hover {
       opacity: 0.7;
     }
