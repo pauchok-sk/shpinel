@@ -44,4 +44,27 @@
       font-size: 18px;
     }
   }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 75px;
+    @include laptop {
+      margin-top: 50px;
+    }
+    @include laptop-min {
+      margin-top: 30px;
+    }
+  }
+  &__col {
+    flex: 1;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+
+    .s-title {
+      margin-bottom: 25px !important;
+    }
+  }
 }
