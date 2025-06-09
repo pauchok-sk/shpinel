@@ -1,0 +1,108 @@
+.s-steps {
+  &__container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    @include tablet {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  &__img {
+    position: sticky;
+    top: 120px;
+    display: block;
+    width: 520px;
+    height: 615px;
+    border-radius: 500px;
+    @include laptop-middle {
+      width: 410px;
+      height: 485px;
+    }
+    @include laptop-min {
+      width: 290px;
+      height: 345px;
+    }
+    @include tablet {
+      position: static;
+      width: 520px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 565px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: start;
+    min-height: 200px;
+    gap: 35px;
+    padding-bottom: 35px;
+    z-index: 1;
+    @include mobile {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &:not(:last-child) {
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 27px;
+        width: 1px;
+        background-color: var(--primary);
+        z-index: -1;
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  }
+  &__num {
+    @include flex-center;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    flex-shrink: 0;
+    background-color: white;
+
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 24px;
+  }
+  &__item-body {
+  }
+  &__item-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 0px 0px 15px 0px;
+  }
+  &__item-content {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+  }
+  &__item-btn {
+    font-size: 16px !important;
+    box-shadow: none;
+    transform: translateY(0) !important;
+    margin-top: 15px;
+    @include pressed {
+      opacity: 1;
+    }
+  }
+}
