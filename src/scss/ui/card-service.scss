@@ -1,0 +1,68 @@
+.card-service {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: end;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  height: 345px;
+  padding: 30px 35px;
+  z-index: 1;
+  @include hover {
+    &::before {
+      opacity: 0.4;
+    }
+  }
+  @include laptop {
+    padding: 25px;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+  @include tablet-min {
+    height: 290px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: white;
+    opacity: 0.6;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0px 0px 35px 0px;
+    @include desktop {
+      margin-bottom: 25px;
+    }
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed currentColor;
+
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary);
+
+    svg {
+      width: 20px;
+      height: 15px;
+    }
+  }
+}

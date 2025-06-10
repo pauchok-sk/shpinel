@@ -15,6 +15,9 @@
 @import "./ui/title";
 @import "./ui/slider";
 @import "./ui/breadcrumbs";
+@import "./ui/card-service";
+@import "./ui/card-checkup";
+@import "./ui/tab";
 
 // widgets
 @import "./widgets/burger";
@@ -36,5 +39,8 @@
 @import "./components/s-single-about";
 @import "./components/s-prices";
 @import "./components/s-steps";
+@import "./components/s-meterials";
+@import "./components/s-archive-services";
+@import "./components/s-checkup";
 
 @import "./components/footer";

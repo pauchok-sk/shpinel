@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dr. Shpinel</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap&_v=20250610135216" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/css/fancybox.min.css?_v=20250610135216">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20250610135216">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250610135216" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.png" alt="Логотип" />
+			</a>
+			<nav class="header__nav">
+				<ul class="list header__list">
+					<li><a href="#">Обо мне</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Чек-апы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__contacts">
+				<a href="tel:+79172907402" class="header__tel _roboto">+7 917 290-74-02</a>
+				<div class="header__social">
+					<a href="#" target="_blank" class="header__social-btn">
+						<img src="img/wh.svg" alt="icon" />
+					</a>
+					<a href="#" target="_blank" class="header__social-btn">
+						<img src="img/tg.svg" alt="icon" />
+					</a>
+				</div>
+			</div>
+			<div class="header__burger-btn" id="burger-open">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__container">
+			<div class="burger__close" id="burger-close">
+				<div></div>
+			</div>
+			<ul class="list burger__list">
+				<li><a href="#">Обо мне</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Чек-апы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="burger__contacts">
+				<a href="tel:+79172907402" class="burger__tel _roboto">+7 917 290-74-02</a>
+				<div class="burger__social">
+					<a href="#" target="_blank" class="burger__social-btn">
+						<img src="img/wh.svg" alt="icon" />
+					</a>
+					<a href="#" target="_blank" class="burger__social-btn">
+						<img src="img/tg.svg" alt="icon" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro-single" style="
+    background: url(&quot;img/intro-single-bg.jpg&quot;) 0 0 / cover no-repeat;
+  ">
+			<div class="container intro-single__container">
+				<div class="intro-single__body">
+					<div class="aioseo-breadcrumbs">
+						<span class="aioseo-breadcrumb">
+							<a href="/" title="Главная">Главная</a>
+						</span>
+						<span class="aioseo-breadcrumb-separator">»</span>
+						<span class="aioseo-breadcrumb">
+							<a href="#" title="Главная">Услуги</a>
+						</span>
+						<span class="aioseo-breadcrumb-separator">»</span>
+						<span class="aioseo-breadcrumb"> Снизить / набрать массу тела </span>
+					</div>
+					<h1 class="s-title intro-single__title">Снизить / набрать массу тела</h1>
+					<div class="content intro-single__content">
+						<p>
+							Наше дело не так однозначно, как может показаться: повышение уровня
+							гражданского сознания предопределяет высокую востребованность
+							глубокомысленных рассуждений.
+						</p>
+					</div>
+					<ul class="list-check">
+						<li>Персонализированный подход</li>
+						<li>Поддержка после консультации</li>
+						<li>Доступные рекомендации</li>
+						<li>Реальные результаты</li>
+					</ul>
+					<a href="#modal-consult" data-fancybox data-consult-title="Снизить / набрать массу тела" class="btn-s intro-single__btn">Записаться на консультацию</a>
+				</div>
+				<img src="img/single-intro.jpg" alt="image" class="intro-single__img" />
+			</div>
+		</section>
+
+		<section class="s-single-about sect-m">
+			<div class="container">
+				<div class="s-single-about__grid">
+					<div class="s-single-about__item">
+						<div class="s-single-about__item-num">01</div>
+						<p class="s-single-about__item-content">
+							Я научу самостоятельно составлять рацион без опоры на планы питания,
+							диеты и подсчет калорий.
+						</p>
+					</div>
+					<div class="s-single-about__item">
+						<div class="s-single-about__item-num">02</div>
+						<p class="s-single-about__item-content">
+							Научу лучше чувствовать свой организм и преодолевать эмоциональную
+							зависимость от еды.
+						</p>
+					</div>
+					<div class="s-single-about__item">
+						<div class="s-single-about__item-num">03</div>
+						<p class="s-single-about__item-content">
+							Помогу плавно внедрить полезные привычки, чтобы всегда оставаться в
+							форме.
+						</p>
+					</div>
+				</div>
+				<div class="s-single-about__wrapper">
+					<div class="s-single-about__col">
+						<h2 class="s-title">Об Услуге</h2>
+						<div class="content">
+							<p>
+								Идейные соображения высшего порядка, а также социально-экономическое
+								развитие не оставляет шанса для приоретизации разума над эмоциями. В
+								своём стремлении улучшить пользовательский опыт мы упускаем, что
+								диаграммы связей лишь добавляют фракционных разногласий и описаны
+								максимально подробно. И нет сомнений, что явные признаки победы
+								институционализации обнародованы.
+							</p>
+							<p>
+								Господа, граница обучения кадров способствует подготовке и
+								реализации первоочередных требований. Прежде всего, курс на
+								социально-ориентированный национальный проект требует определения и
+								уточнения своевременного выполнения сверхзадачи.
+							</p>
+						</div>
+					</div>
+					<div class="s-single-about__col">
+						<h2 class="s-title">ЭТА УСЛУГА ДЛЯ ТЕХ КТО ХОЧЕТ:</h2>
+						<ul class="list-check">
+							<li>Улучшить состояние здоровья</li>
+							<li>Поддерживать вес</li>
+							<li>Улучшить физическое состояние</li>
+							<li>Улучшить состояние кожи, волос и ногтей</li>
+							<li>Подготовиться к беременности</li>
+							<li>Развивать здоровые пищевые привычки</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-prices sect-m">
+			<div class="container">
+				<div class="s-head">
+					<div>
+						<h2 class="s-title">Цены и тарифы</h2>
+						<p class="content">У консультаций, есть 4 тарифа</p>
+					</div>
+				</div>
+				<div class="s-prices__grid">
+					<div class="s-prices__item">
+						<h3 class="s-prices__item-title _cormorant">Первичная консультация</h3>
+						<ul class="list s-prices__item-list">
+							<li>Диагностика, рекомендации</li>
+							<li>
+								Повторная консультация — корректировка <br />
+								плана со скидкой 30%
+							</li>
+						</ul>
+						<div class="s-prices__item-price">
+							<div class="s-prices__item-price-content">Стоимость:</div>
+							<div class="s-prices__item-price-value">10 000 ₽</div>
+						</div>
+						<a href="#modal-consult" data-fancybox data-consult-title="Первичная консультация" class="btn-s s-prices__item-price-btn">Записаться на консультацию</a>
+					</div>
+					<div class="s-prices__item">
+						<h3 class="s-prices__item-title _cormorant">
+							Разбор <br />
+							анализов
+						</h3>
+						<ul class="list s-prices__item-list">
+							<li>
+								От клиента <br />
+								или по назначению
+							</li>
+						</ul>
+						<div class="s-prices__item-price">
+							<div class="s-prices__item-price-content">Стоимость:</div>
+							<div class="s-prices__item-price-value">1 500 ₽</div>
+						</div>
+						<a href="#modal-consult" data-fancybox data-consult-title="Разбор анализов" class="btn-s s-prices__item-price-btn">Записаться на консультацию</a>
+					</div>
+					<div class="s-prices__item">
+						<h3 class="s-prices__item-title _cormorant">Программа сопровождения</h3>
+						<ul class="list s-prices__item-list">
+							<li>Питание, сон, гормоны, стресс</li>
+						</ul>
+						<div class="s-prices__item-price">
+							<div class="s-prices__item-price-content">Стоимость:</div>
+							<div class="s-prices__item-price-value">3 000 ₽</div>
+						</div>
+						<a href="#modal-consult" data-fancybox data-consult-title="Программа сопровождения" class="btn-s s-prices__item-price-btn">Записаться на консультацию</a>
+					</div>
+					<div class="s-prices__item">
+						<h3 class="s-prices__item-title _cormorant">
+							Составление <br />
+							Меню
+						</h3>
+						<ul class="list s-prices__item-list">
+							<li>Составление индивидуального плана меню</li>
+						</ul>
+						<div class="s-prices__item-price">
+							<div class="s-prices__item-price-content">Стоимость:</div>
+							<div class="s-prices__item-price-value">1 500 ₽</div>
+						</div>
+						<a href="#modal-consult" data-fancybox data-consult-title="Составление Меню" class="btn-s s-prices__item-price-btn">Записаться на консультацию</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-steps sect-m">
+			<div class="container s-steps__container">
+				<img src="img/steps.jpg" alt="image" class="s-steps__img" />
+				<div class="s-steps__body">
+					<div class="s-steps__item">
+						<div class="s-steps__num">1</div>
+						<div class="s-steps__item-body">
+							<h5 class="s-steps__item-title">Запись на консультацию</h5>
+							<p class="s-steps__item-content">
+								Помогу восстановить энергию, наладить питание, улучшить самочувствие
+								и внешний вид без жёстких ограничений и диет.
+							</p>
+							<a href="#modal-consult" data-fancybox class="btn-s s-steps__item-btn">Записаться на консультацию</a>
+						</div>
+					</div>
+					<div class="s-steps__item">
+						<div class="s-steps__num">2</div>
+						<div class="s-steps__item-body">
+							<h5 class="s-steps__item-title">Консультация и обследование</h5>
+							<p class="s-steps__item-content">
+								И нет сомнений, что некоторые особенности внутренней политики
+								формируют глобальную экономическую сеть и при этом — преданы
+								социально-демократической анафеме.
+							</p>
+						</div>
+					</div>
+					<div class="s-steps__item">
+						<div class="s-steps__num">3</div>
+						<div class="s-steps__item-body">
+							<h5 class="s-steps__item-title">Сопровождение на всех этапах</h5>
+							<p class="s-steps__item-content">
+								Наше дело не так однозначно, как может показаться: укрепление и
+								развитие внутренней структуры, в своём классическом представлении,
+								допускает внедрение своевременного выполнения сверхзадачи. Не
+								следует, однако, забывать, что реализация намеченных плановых
+								заданий играет важную роль в формировании благоприятных перспектив.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-for-you sect-m">
+			<div class="container s-for-you__container">
+				<h2 class="s-title s-for-you__title"><span>ДЛЯ</span> ВАС</h2>
+				<p class="content s-for-you__content">
+					Здесь также информация <br />
+					как вам подготовить к консультации нутрициолога
+				</p>
+				<div class="s-for-you__form-title">Выберите куда вам отправить?</div>
+				<form action="#" class="s-for-you__form">
+					<div class="input-control">
+						<select class="select">
+							<option value="Получить в WhatsApp">Получить в WhatsApp</option>
+							<option value="Получить в Telegram">Получить в Telegram</option>
+						</select>
+					</div>
+					<div class="input-control">
+						<input type="tel" placeholder="Ваш номер телефона" class="input" />
+					</div>
+					<button class="btn-s form-btn">Получить сейчас</button>
+					<input type="checkbox" id="for-you-policy" class="form-policy-input" checked required />
+					<label for="for-you-policy" class="form-policy-label modal__form-policy-label">
+				</form>
+				<span>Cогласен с условиями
+					<a href="#" target="_blank">политики конфиденциальности данных</a></span>
+				</label>
+				<img src="img/for-you.png" alt="image" class="s-for-you__img" />
+			</div>
+		</section>
+
+		<section class="s-reviews sect-p" style="background: url('img/reviews-bg.jpg') 0 0 / cover no-repeat;">
+			<div class="container">
+				<div class="s-head">
+					<div>
+						<h2 class="s-title">отзывы</h2>
+						<p class="content s-reviews__content">
+							и истории трансформации жизней людей
+						</p>
+					</div>
+					<div class="slider-nav">
+						<div class="slider-btn _prev">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+							</svg>
+						</div>
+						<div class="slider-btn _next">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="swiper s-reviews__slider">
+					<div class="swiper-wrapper">
+						<a href="img/review.jpg" data-fancybox="reviews" class="swiper-slide s-reviews__slide">
+							<div class="s-reviews__slide-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</div>
+							<img src="img/review.jpg" alt="image" />
+						</a>
+						<a href="img/review.jpg" data-fancybox="reviews" class="swiper-slide s-reviews__slide">
+							<div class="s-reviews__slide-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</div>
+							<img src="img/review.jpg" alt="image" />
+						</a>
+						<a href="img/review.jpg" data-fancybox="reviews" class="swiper-slide s-reviews__slide">
+							<div class="s-reviews__slide-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</div>
+							<img src="img/review.jpg" alt="image" />
+						</a>
+						<a href="img/review.jpg" data-fancybox="reviews" class="swiper-slide s-reviews__slide">
+							<div class="s-reviews__slide-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</div>
+							<img src="img/review.jpg" alt="image" />
+						</a>
+						<a href="img/review.jpg" data-fancybox="reviews" class="swiper-slide s-reviews__slide">
+							<div class="s-reviews__slide-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</div>
+							<img src="img/review.jpg" alt="image" />
+						</a>
+						<a href="img/review.jpg" data-fancybox="reviews" class="swiper-slide s-reviews__slide">
+							<div class="s-reviews__slide-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</div>
+							<img src="img/review.jpg" alt="image" />
+						</a>
+					</div>
+				</div>
+				<div class="slider-pagination"></div>
+			</div>
+		</section>
+
+		<section class="s-faq sect-m">
+			<div class="container">
+				<div class="s-head">
+					<div>
+						<h2 class="s-title">Вопрос-ответ</h2>
+						<p class="content">
+							ТОП-8 самых популярных вопросов перед консультацией
+						</p>
+					</div>
+				</div>
+				<div data-spollers class="s-faq__spollers">
+					<div class="s-faq__spollers-col">
+						<div class="s-faq__spoller">
+							<div data-spoller class="s-faq__spoller-btn">
+								<span>С каками запросами вы работаете?</span>
+								<div></div>
+							</div>
+							<div>
+								<div class="s-faq__spoller-body content">
+									<p>
+										Сложно сказать, почему базовые сценарии поведения пользователей
+										призваны к ответу. Но сделанные на базе интернет-аналитики
+										выводы своевременно верифицированы. Есть над чем задуматься:
+										независимые государства, вне зависимости от их уровня, должны
+										быть указаны как претенденты на роль ключевых факторов.
+									</p>
+									<p>
+										Есть над чем задуматься: действия представителей оппозиции
+										формируют глобальную экономическую сеть и при этом — ограничены
+										исключительно образом мышления. Как уже неоднократно упомянуто,
+										сделанные на базе интернет-аналитики выводы, вне зависимости от
+										их уровня, должны быть ассоциативно распределены по отраслям.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="s-faq__spoller">
+							<div data-spoller class="s-faq__spoller-btn">
+								<span>Сколько длится прием?</span>
+								<div></div>
+							</div>
+							<div>
+								<div class="s-faq__spoller-body content">
+									<p>
+										Сложно сказать, почему базовые сценарии поведения пользователей
+										призваны к ответу. Но сделанные на базе интернет-аналитики
+										выводы своевременно верифицированы. Есть над чем задуматься:
+										независимые государства, вне зависимости от их уровня, должны
+										быть указаны как претенденты на роль ключевых факторов.
+									</p>
+									<p>
+										Есть над чем задуматься: действия представителей оппозиции
+										формируют глобальную экономическую сеть и при этом — ограничены
+										исключительно образом мышления. Как уже неоднократно упомянуто,
+										сделанные на базе интернет-аналитики выводы, вне зависимости от
+										их уровня, должны быть ассоциативно распределены по отраслям.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="s-faq__spoller">
+							<div data-spoller class="s-faq__spoller-btn">
+								<span>С каками запросами вы работаете?</span>
+								<div></div>
+							</div>
+							<div>
+								<div class="s-faq__spoller-body content">
+									<p>
+										Сложно сказать, почему базовые сценарии поведения пользователей
+										призваны к ответу. Но сделанные на базе интернет-аналитики
+										выводы своевременно верифицированы. Есть над чем задуматься:
+										независимые государства, вне зависимости от их уровня, должны
+										быть указаны как претенденты на роль ключевых факторов.
+									</p>
+									<p>
+										Есть над чем задуматься: действия представителей оппозиции
+										формируют глобальную экономическую сеть и при этом — ограничены
+										исключительно образом мышления. Как уже неоднократно упомянуто,
+										сделанные на базе интернет-аналитики выводы, вне зависимости от
+										их уровня, должны быть ассоциативно распределены по отраслям.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-faq__spollers-col">
+						<div class="s-faq__spoller">
+							<div data-spoller class="s-faq__spoller-btn">
+								<span>С каками запросами вы работаете?</span>
+								<div></div>
+							</div>
+							<div>
+								<div class="s-faq__spoller-body content">
+									<p>
+										Сложно сказать, почему базовые сценарии поведения пользователей
+										призваны к ответу. Но сделанные на базе интернет-аналитики
+										выводы своевременно верифицированы. Есть над чем задуматься:
+										независимые государства, вне зависимости от их уровня, должны
+										быть указаны как претенденты на роль ключевых факторов.
+									</p>
+									<p>
+										Есть над чем задуматься: действия представителей оппозиции
+										формируют глобальную экономическую сеть и при этом — ограничены
+										исключительно образом мышления. Как уже неоднократно упомянуто,
+										сделанные на базе интернет-аналитики выводы, вне зависимости от
+										их уровня, должны быть ассоциативно распределены по отраслям.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="s-faq__spoller">
+							<div data-spoller class="s-faq__spoller-btn">
+								<span>Сколько длится прием?</span>
+								<div></div>
+							</div>
+							<div>
+								<div class="s-faq__spoller-body content">
+									<p>
+										Сложно сказать, почему базовые сценарии поведения пользователей
+										призваны к ответу. Но сделанные на базе интернет-аналитики
+										выводы своевременно верифицированы. Есть над чем задуматься:
+										независимые государства, вне зависимости от их уровня, должны
+										быть указаны как претенденты на роль ключевых факторов.
+									</p>
+									<p>
+										Есть над чем задуматься: действия представителей оппозиции
+										формируют глобальную экономическую сеть и при этом — ограничены
+										исключительно образом мышления. Как уже неоднократно упомянуто,
+										сделанные на базе интернет-аналитики выводы, вне зависимости от
+										их уровня, должны быть ассоциативно распределены по отраслям.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="s-faq__spoller">
+							<div data-spoller class="s-faq__spoller-btn">
+								<span>С каками запросами вы работаете?</span>
+								<div></div>
+							</div>
+							<div>
+								<div class="s-faq__spoller-body content">
+									<p>
+										Сложно сказать, почему базовые сценарии поведения пользователей
+										призваны к ответу. Но сделанные на базе интернет-аналитики
+										выводы своевременно верифицированы. Есть над чем задуматься:
+										независимые государства, вне зависимости от их уровня, должны
+										быть указаны как претенденты на роль ключевых факторов.
+									</p>
+									<p>
+										Есть над чем задуматься: действия представителей оппозиции
+										формируют глобальную экономическую сеть и при этом — ограничены
+										исключительно образом мышления. Как уже неоднократно упомянуто,
+										сделанные на базе интернет-аналитики выводы, вне зависимости от
+										их уровня, должны быть ассоциативно распределены по отраслям.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" target="_blank" class="btn-outline s-faq__btn">
+					<span>Записаться на 1-ю консультацию</span>
+					<svg>
+						<use xlink:href='img/icons/icons.svg#icon-wh'></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+
+		<section class="s-consult sect-m">
+			<div class="container">
+				<div class="s-consult__body" style="
+        background: url(&quot;img/consult-bg.jpg&quot;) 0 0 / cover no-repeat;
+      ">
+					<h2 class="s-title s-consult__title">Запишитесь</h2>
+					<p class="content s-consult__content">на консультацию прямо сейчас</p>
+					<form action="#" class="s-consult__form">
+						<div class="input-control">
+							<input type="text" placeholder="Ваше имя" class="input" />
+						</div>
+						<div class="input-control">
+							<input type="tel" placeholder="Ваш номер телефона" class="input" />
+						</div>
+						<button class="btn-s form-btn">Получить сейчас</button>
+						<input type="checkbox" id="consult-policy-sect" class="form-policy-input" required checked />
+						<label for="consult-policy-sect" class="form-policy-label">
+							<span>Cогласен с условиями
+								<a href="#" target="_blank">политики конфиденциальности данных</a></span>
+						</label>
+					</form>
+					<div class="s-consult__social">
+						<span>или напишите, я онлайн</span>
+						<div class="s-consult__social-row">
+							<a href="#" target="_blank" class="s-consult__social-btn">
+								<img src="img/wh.svg" alt="icon" />
+							</a>
+							<a href="#" target="_blank" class="s-consult__social-btn">
+								<img src="img/tg.svg" alt="icon" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal" id="modal-consult">
+		<h3 class="modal__title _cormorant">Запишитесь</h3>
+		<p class="modal__content">на консультацию прямо сейчас</p>
+		<form action="#" class="modal__form">
+			<input type="text" class="input-hide" id="name-consult">
+			<div class="input-control">
+				<input type="text" placeholder="Ваше имя" class="input" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="Ваш номер телефона" class="input" />
+			</div>
+			<button class="btn-s form-btn">Записаться на консультацию</button>
+			<input type="checkbox" id="consult-policy" class="form-policy-input" checked required />
+			<label for="consult-policy" class="form-policy-label">
+				<span>Cогласен с условиями <a href="#" target="_blank">политики конфиденциальности данных</a></span>
+			</label>
+		</form>
+		<div class="modal__social">
+			<span>или напишите, я онлайн</span>
+			<div class="modal__social-row">
+				<a href="#" target="_blank" class="modal__social-btn">
+					<img src="img/wh.svg" alt="icon">
+				</a>
+				<a href="#" target="_blank" class="modal__social-btn">
+					<img src="img/tg.svg" alt="icon">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__content">Все права защищены</div>
+			<a href="#" target="_blank" class="footer__content">Политика конфиденциальности</a>
+			<div class="footer__content">Разработано Art Metrika</div>
+		</div>
+	</footer>
+
+	<script src="./files/js/inputmask.min.js?_v=20250610135216"></script>
+	<script src="./files/js/fancybox.min.js?_v=20250610135216"></script>
+	<script src="./files/js/swiper.min.js?_v=20250610135216"></script>
+	<script src="js/app.min.js?_v=20250610135216"></script>
+</body>
+
+</html>

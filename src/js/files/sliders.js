@@ -88,4 +88,39 @@ export default function sliders() {
       },
     });
   }
+
+  const materialsSlider = document.querySelector(".s-materials__slider");
+
+  if (materialsSlider) {
+    const swiper = new Swiper(materialsSlider, {
+      speed: 700,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        prevEl: ".s-materials .slider-btn._prev",
+        nextEl: ".s-materials .slider-btn._next",
+      },
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
 }

@@ -1,0 +1,52 @@
+.s-materials {
+  margin-top: 50px !important;
+  &__slider {
+  }
+  &__slide {
+    display: flex !important;
+    flex-direction: column;
+    height: auto !important;
+  }
+  &__slide-gallery {
+    position: relative;
+    width: 100%;
+    padding-bottom: 71%;
+
+    img {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__slide-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 24px 0px 0px 0px;
+  }
+  &__slide-content {
+    font-size: 16px;
+    margin: 15px 0px;
+    @include overflowText(5);
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__slide-btn {
+    width: fit-content;
+    margin-top: auto;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    @include hover {
+      text-decoration: none;
+    }
+  }
+}
